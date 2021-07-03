@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+/*Custom Properties  (variables)*/
+
+:root {
+    --leading: 2em;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 8; 
 }
 .hero-bg{
-    background: darkcyan url('../images/food.jpg');
+    background: darkcyan url('../images/oranges.jpg');
     color: white;
     text-align: center;
     padding-bottom: 4em; /*this is to add white space to the bottom*/
+    
 }
 header{
     padding: 1em 0;
 }
-
+ 
 .hero-bg a {
     color: white;
     text-decoration: none;
@@ -36,4 +42,122 @@ h1 span{
     text-transform: uppercase;
     display: block;
     font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before{
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: aqua;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.hero-bg p{   /*this will affect the element <p> in the .hero section*/
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+ .form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+}
+
+
+label{
+    color: #2d7d98;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+
+}
+
+input[type=text] { 
+    border: 2px solid #707070;
+    width: 100%;
+    padding : 1em;
+    border-radius: .5em;
+    box-sizing: border-box;
+    margin-top: 1.2em;
+}
+
+.form-container p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    margin-top: .3em;
+    font-size: .9em;
+}
+
+input[type=button] {
+    background-color: orange;
+    border: none;
+    width: 100%;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: .5em;
+    cursor: pointer; 
+}
+
+input[type=button]:hover {
+    background-color: rgb(160, 77, 9)
+}
+
+.authentic {
+    margin: 0;
+}
+
+h2 {
+     text-transform: uppercase;
+     position: relative;
+}
+
+h2::before {
+    content: ' ';
+    position: absolute;
+    width: 8em;
+    background: rgb(26, 153, 238);
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+.right-col {
+    text-align: center;
+    margin: 3em 1em;
+}
+
+img { 
+    width: 100%;
+}
+
+p {
+    line-height: var(--leading);
+}
+
+@media (min-width: 730px){
+    section{
+        margin: 0 4em;
+    }
+    .form-container {
+        margin: 2em -4em 0;
+    }
+}
+
+@media (min-width: 930){
+  
+    .hero-bg{
+        text-align: left;
+        padding-bottom: 4em; /*this is to add white space to the bottom*/
+        
+    }
 }
