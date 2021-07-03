@@ -5,15 +5,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 8; 
 }
-
 .hero-bg{
     background: darkcyan url('../images/food.jpg');
     color: white;
     text-align: center;
     padding-bottom: 4em; /*this is to add white space to the bottom*/
-
 }
-
 header{
     padding: 1em 0;
 }
