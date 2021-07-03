@@ -1,5 +1,3 @@
-﻿Good Bye
-Hello it is me again!
-hello Alejandro!
-this is my first remote push repository
-this will be an example of pull request
+﻿This is a project that is helping me to learn HTML and CSS programming
+
+later on i will pass to learn some java script
